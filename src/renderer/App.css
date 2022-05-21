@@ -1,0 +1,105 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Oxygen&display=swap');
+
+:root {
+  --black: #16161d;
+  --white: #fff;
+  --color-primary-0: #06309a;
+  --color-primary-1: #2657d1;
+  --color-primary-2: #0a40c8;
+  --color-primary-3: #04277c;
+  --color-primary-4: #021c5d;
+  --color-complement-0: #e59a00;
+  --color-complement-1: #ffb215;
+  --color-complement-2: #ffab00;
+  --color-complement-3: #b97d00;
+  --color-complement-4: #8a5d00;
+}
+
+body {
+  font-family: 'Martel', serif;
+  font-size: 18px;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oxygen', sans-serif;
+  color: var(--color-primary-0);
+}
+
+label {
+  display: block;
+}
+
+button {
+  border: 1px solid;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 50%;
+  height: 28px;
+  font-size: 18px;
+}
+
+button {
+  background: var(--white);
+  border: 1px solid var(--black);
+  outline: none;
+  height: 28px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.options {
+  margin-top: 1rem;
+  font-size: 0.9em;
+}
+
+.utc {
+  font-size: 0.8em;
+}
+
+.github-username {
+  color: var(--color-complement-0);
+}
+
+.github-notifications .github-notification:nth-child(even) {
+  background: #dedede;
+}
+
+.github-notification table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.github-notification table tr td {
+  border-bottom: 1px solid var(--black);
+  padding: 12px;
+}
+
+.github-notification table tr td:first-child {
+  font-weight: bold;
+  width: 45%;
+}
+
+.github-notification table tr td:nth-child(2) {
+  width: 250px;
+}
